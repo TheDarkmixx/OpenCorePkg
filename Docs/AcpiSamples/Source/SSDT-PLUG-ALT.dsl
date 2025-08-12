@@ -14,11 +14,11 @@
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
 {
-    External (_SB_, DeviceObj)
+    External (_SB_.PR00, DeviceObj)
 
-    Scope (\_SB)
+    Scope (\_SB.PR00)
     {
-        Processor (CP00, 0x00, 0x00000510, 0x06)
+        Processor (PR00, 0x00, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)  // _HID: Hardware ID
             Name (_UID, Zero)
@@ -48,7 +48,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP01, 0x01, 0x00000510, 0x06)
+        Processor (PR01, 0x01, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 1)
@@ -65,7 +65,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP02, 0x02, 0x00000510, 0x06)
+        Processor (PR02, 0x02, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 2)
@@ -82,7 +82,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP03, 0x03, 0x00000510, 0x06)
+        Processor (PR03, 0x03, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 3)
@@ -99,7 +99,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP04, 0x04, 0x00000510, 0x06)
+        Processor (PR04, 0x04, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 4)
@@ -116,7 +116,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP05, 0x05, 0x00000510, 0x06)
+        Processor (PR05, 0x05, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 5)
@@ -133,7 +133,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP06, 0x06, 0x00000510, 0x06)
+        Processor (PR06, 0x06, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 6)
@@ -150,7 +150,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP07, 0x07, 0x00000510, 0x06)
+        Processor (PR07, 0x07, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 7)
@@ -167,7 +167,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP08, 0x08, 0x00000510, 0x06)
+        Processor (PR08, 0x08, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 8)
@@ -184,7 +184,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP09, 0x09, 0x00000510, 0x06)
+        Processor (PR09, 0x09, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 9)
@@ -201,7 +201,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP10, 0x0A, 0x00000510, 0x06)
+        Processor (PR10, 0x0A, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 10)
@@ -218,7 +218,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP11, 0x0B, 0x00000510, 0x06)
+        Processor (PR11, 0x0B, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 11)
@@ -235,7 +235,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP12, 0x0C, 0x00000510, 0x06)
+        Processor (PR12, 0x0C, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 12)
@@ -252,7 +252,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP13, 0x0D, 0x00000510, 0x06)
+        Processor (PR13, 0x0D, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 13)
@@ -269,7 +269,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP14, 0x0E, 0x00000510, 0x06)
+        Processor (PR14, 0x0E, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 14)
@@ -286,7 +286,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
             }
         }
 
-        Processor (CP15, 0x0F, 0x00000510, 0x06)
+        Processor (PR15, 0x0F, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)
             Name (_UID, 15)
