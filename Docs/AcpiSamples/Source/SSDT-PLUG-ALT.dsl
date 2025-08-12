@@ -18,7 +18,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlugA", 0x00003000)
 
     Scope (\_SB)
     {
-        Processor (CP00, 0x00, 0x00000510, 0x06)
+        Processor (PC00, 0x00, 0x00000510, 0x06)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)  // _HID: Hardware ID
             Name (_UID, Zero)
